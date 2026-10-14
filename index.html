@@ -1,4 +1,763 @@
+<html>
+    <!-- Documento scritto da Erica Bertuzzi -->
 <head>
-  <title>Titolo</title>
+    <title>
+        Manuale di HTML
+    </title>
+    <style>
+        .index{
+            background: linear-gradient(to right, white,white,white,rgb(255, 217, 223));
+        }
+
+        .index dt{
+            margin: 3px;
+            float: inline-start;
+        }
+
+        .index dt a {
+            background: rgb(205, 185, 208);
+            padding:10px;
+            border: 1px solid gray;
+            border-radius: 2cm;
+            color:black;
+            text-decoration: none;
+        }
+        .index dd a{
+            color:black;
+            text-decoration: none;
+        }
+
+       
+        td, th, table:not([border]) {
+            border: 1px solid black;
+        }
+
+        td:not(.bgc, .def){
+            background: linear-gradient(to bottom, lightgrey,white, lightgrey);
+            padding: 5px
+        }
+
+        
+        .def
+        {
+            background: linear-gradient(to bottom, rgb(155, 148, 190),white, rgb(155, 148, 190));
+            padding: 5px;
+            text-align: center;
+        }
+
+       
+        
+    </style>
 </head>
-<body>Hello World</body>
+<body>
+<div class="index">
+<h1>Manuale di HTML </h1>
+
+<dl>  
+<dt>Vai alla sezione:</dt>
+<dt><a href="#hb"> Head/Body</a> </dt>
+<dt><a href="#ttop"> Tag Topografici</a> </dt>
+<dt><a href="#lst"> Liste</a>   </dt>
+<dt><a href="#tab"> Tabelle</a></dt> 
+<dt><a href="#tv"> Tag Vari</a></dt> 
+<dt><a href="#ov"> Attributi Vari</a></dt>
+</dl>
+<br>
+
+<br>
+<hr></div>
+
+<h2 id="hb">Head/Body</h2>
+<table cellspacing="0">
+    <!--Head-->
+    <tr>
+        <td rowspan="2" class="def">
+            <tt>head</tt>
+        </td>
+        <td colspan="2"> Parte del codice HTML contente il titolo della pagina e informazioni per lo più nascoste all'utente. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><head> 
+    <title> Manuale di HTML</title>
+</head></xmp>
+</td>
+</tr>
+
+<!--Body-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>body</tt>
+        </td>
+        <td colspan="2"> Parte del codice HTML contente il contenuto della pagina che è visibile all'utente. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><body> abc ABC </body></xmp>
+</td>
+</tr>
+</table>
+
+<h2 id="ttop">Tag tipografici</h2>
+<table cellspacing="0">
+    <!--b-->
+    <tr>
+        <td rowspan="2" class="def">
+            <tt>b</tt>
+        </td>
+        <td colspan="2"> <b>Bold</b>. Rende il testo dentro al blocco in grassetto. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><b>Bold</b></xmp>
+</td>
+</tr>
+
+<!--i-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>i</tt>
+        </td>
+        <td colspan="2"> <i>Italics</i> Rende il testo dentro al blocco in corsivo. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><i>Italics</i></xmp>
+</td>
+</tr>
+
+<!--u-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>u</tt>
+        </td>
+        <td colspan="2"> <u>Underline</u> Rende il testo dentro al blocco sottolineato. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><u>Underline</u></xmp>
+</td>
+</tr>
+
+<!--s-->
+ <tr>
+        <td rowspan="2" class="def">
+            <tt>s</tt>
+        </td>
+        <td colspan="2"> <s>Strikethrough</s> Rende il testo dentro al blocco barrato. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><s>Strikethrough</s></xmp>
+</td>
+</tr>
+
+<!--sup-->
+ <tr>
+        <td rowspan="2" class="def">
+            <tt>sup</tt>
+        </td>
+        <td colspan="2"> <sup>Superscript</sup> Rende il testo dentro al blocco come testo apice. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><sup>Superscript</sup></xmp>
+</td>
+</tr>
+
+<!--sub-->
+ <tr>
+        <td rowspan="2" class="def">
+            <tt>sub</tt>
+        </td>
+        <td colspan="2"> <sub>Subscript</sub> Rende il testo dentro al blocco come testo pedice. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><sub>Subscript</sub></xmp>
+</td>
+</tr>
+
+<!--code-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>code</tt>
+        </td>
+        <td colspan="2"> <code>Codice_001:</code> Rende il testo dentro al blocco in un formato grafico, simile a quello di un codice di programmazione. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><code>Codice_001:</code></xmp>
+</td>
+</tr>
+
+<!--small-->
+  <tr>
+        <td rowspan="2" class="def" id="divi">
+            <tt>small</tt>
+        </td>
+        <td colspan="2"> Rende un testo <small>un po' più piccolo</small> del normale.</td></tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp> Rende un testo <small>un po' più piccolo</small> del normale. </xmp>
+</td>
+</tr>
+
+<!--h_-->
+ <tr>
+        <td rowspan="2" class="def">
+            <tt>h_</tt>
+        </td>
+        <td colspan="2"> <h4>Dove al posto di _ c'è un numero</h4>
+            Rende il testo dentro al blocco come un intestazione (bold + a capo + dimensioni diverse + spaziatura sotto). <br>
+            Minore il numero, maggiori le dimensioni (comprese tra 1(max) e 6 (min)). </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><h4>Dove al posto di _ c'è un numero</h4></xmp>
+</td>
+</tr>
+</table>
+
+<h2 id="lst">Liste</h2>
+<table cellspacing="0">
+    <!--ol-->
+    <tr>
+        <td rowspan="2" class="def">
+            <tt>ol</tt>
+        </td>
+        <td colspan="2"> <ol><li>Lista ordinata.</li></ol> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><ol> <!-- #TODO: items --> </ol></xmp>
+</td>
+</tr>
+
+<!--ul-->
+   <tr>
+        <td rowspan="2" class="def">
+            <tt>ul</tt>
+        </td>
+        <td colspan="2"> <ul><li>Lista non ordinata.</li></ul> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><ul> <!-- #TODO: items --> </ul></xmp>
+</td>
+</tr>
+
+<!--li-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>li</tt>
+        </td>
+        <td colspan="2"><ol><li>Un</li><li>elemento</li></ol><ul><li>di una lista.</li></ul> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><ol><li>Un</li></ol></xmp>
+</td>
+</tr>
+
+<!--more list items-->
+<tr><td>Altri esempi di liste:</td>
+<td colspan="2"> <table style="margin: -7;"><tr><td>
+    <ol type="I"> <li>Primo</li> <li>Secondo</li> <li>Terzo</li> </ol>
+</td>
+
+<td>
+    <ol type="a"> <li>aaaa</li> <li>bbbb</li> <li>cccc</li> </ol>
+</td>
+
+<td>
+    <ul> <li type="square">Quadrato</li> <li type="circle">Cerchio</li> <li style="list-style-type:'\1F606'">Quello che vuoi</li> </ul>
+
+</td>
+
+
+</tr>
+<tr><td>
+    <xmp><ol type="I"> <li>Primo</li>
+<li>Secondo</li>
+<li>Terzo</li> </ol></xmp>
+</td>
+
+<td>
+    <xmp><ol type="a"><li>aaaa</li>
+<li>bbbb</li>
+<li>cccc</li> </ol></xmp>
+</td>
+
+<td>
+    <xmp><ul> <li type="square">Quadrato</li>
+<li type="circle">Cerchio</li>
+<li style="list-style-type:'\1F606'">Quello che vuoi</li> </ul></xmp>
+</td>
+
+
+</tr>
+</table> </td></tr>
+
+
+<!--dl-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>dl</tt>
+        </td>
+        <td colspan="2"> <dl><dt>definition list</dt><dd>Lista di definizioni.</dd></dl> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><dl><!-- #TODO: definizioni --></dl></xmp>
+</td>
+</tr>
+
+<!--dt-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>dt</tt>
+        </td>
+        <td colspan="2"> 
+            <dl><dt>definition term</dt><dd>Termine della definizione.</dd></dl> 
+        </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><dl><dt>definition term</dt> <!-- #TODO: definizione --> </dl> </xmp>
+</td>
+</tr>
+
+
+<!--dd-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>dd</tt>
+        </td>
+        <td colspan="2"> 
+            <dl><dt>definition description</dt><dd>Definizione vera e propria.</dd></dl> 
+        </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><dl><dt>definition description</dt> <dd>Definizione vera e propria.</dd> </dl> </xmp>
+</td>
+</tr>
+
+</table>
+
+
+<h2 id="tab">Tabelle</h2>
+<table cellspacing="0">
+    <!--table-->
+    <tr>
+        <td rowspan="2" class="def">
+            <tt>table</tt>
+        </td>
+        <td colspan="2"> Struttura generale e bordo esterno di una tabella. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0"> <!-- #TODO: righe --> </table></xmp>
+</td>
+</tr>
+
+<!--tr-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>tr</tt>
+        </td>
+        <td colspan="2"> table row. Riga di una tabella. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0"><tr> <!-- #TODO: colonne --> </tr></table></xmp>
+</td>
+</tr>
+
+<!--tr-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>td</tt>
+        </td>
+        <td colspan="2"> table data. Cella dentro una riga di una tabella. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0"><tr><td> Data </td></tr></table></xmp>
+</td>
+</tr>
+
+<!--tr-->
+  <tr>
+        <td rowspan="2" class="def">
+            <tt>th</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0"><tr><th>table header</th></tr><tr> <td> Cella di intestazione dentro una riga di una tabella.</td> </tr></table>
+        
+        </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0"><tr><th>table header</th></tr></table></xmp>
+</td>
+</tr>
+
+</table>
+
+<h2 id="tv">Tag vari</h2>
+<table cellspacing="0">
+    <!--br-->
+    <tr>
+        <td rowspan="2" class="def" id="br">
+            <tt>br</tt>
+        </td>
+        <td colspan="2"> Codice atomico (non si apre, non si chiude)<br>per andare a capo </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp>Hello<br>World</xmp>
+</td>
+</tr>
+
+<!--a-->
+  <tr>
+        <td rowspan="2" class="def" id="a">
+            <tt>a</tt>
+        </td>
+        <td colspan="2"> <a href="#a"> Blocco contenente un link. </a> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><a href=""> Blocco contenente un link. </a></xmp>
+</td>
+</tr>
+
+<!--center-->
+  <tr>
+        <td rowspan="2" class="def" id="cntr">
+            <tt>center</tt>
+        </td>
+        <td colspan="2"> <center> Codice per centrare un testo (senza usare CSS). </center> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><center> Codice per centrare un testo (senza usare CSS). </center></xmp>
+</td>
+</tr>
+
+<!--hr-->
+  <tr>
+        <td rowspan="2" class="def" id="hr">
+            <tt>hr</tt>
+        </td>
+        <td colspan="2"> Horizontal Rule<hr>serve a tirare una linea orrizzontale per dividere porzioni di pagina. </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp>Horizontal Rule<hr>serve a tirare una linea orrizzontale per dividere porzioni di pagina.</xmp>
+</td>
+</tr>
+
+
+<!--img-->
+  <tr>
+        <td rowspan="2" class="def" id="imag">
+            <tt>img</tt>
+        </td>
+        <td colspan="2"> Image, serve per caricare immagini in una pagina web. <img src="https://myimgs.org/storage/images/52667/rombo_t.png"> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><img src="https://myimgs.org/storage/images/52667/rombo_t.png"></xmp>
+</td>
+</tr>
+
+
+<!--p-->
+  <tr>
+        <td rowspan="2" class="def" id="para">
+            <tt>p</tt>
+        </td>
+        <td colspan="2"> Sta per <p>Paragraph.</p> Scrive un paragrafo di testo. Non può contenere altri p o div. Include un "br" doppio prima e dopo</td></tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp>Sta per <p>Paragraph.</p></xmp>
+</td>
+</tr>
+
+<!--div-->
+  <tr>
+        <td rowspan="2" class="def" id="divi">
+            <tt>div</tt>
+        </td>
+        <td colspan="2"> Sta per <div><div>Division</div> Scrive una porzione di codice. Può contenere altri div (e p).</div> Include un "br" singolo prima e dopo</td></tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp> Sta per<div><div>Division</div> Scrive una porzione di codice. Può contenere altri div (e p).</div></xmp>
+</td>
+</tr>
+
+</table>
+
+<!-- attributi -->
+
+<h2 id="ov">Attributi vari</h2>
+<i>Gli attributi vanno inserite nelle parentesi angolari di un tag.</i>
+<table cellspacing="0">
+    <!--align-->
+    <tr>
+        <td rowspan="2" class="def" id="align">
+            <tt>align</tt>
+        </td>
+        <td colspan="2"> Attributo per cambiare l'allineamento del testo </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+    <table cellspacing="0" width="800">
+        <tr>
+            <td align="left">a sinistra (norm)</td>
+            <td align="center">al centro</td>
+            <td align="right">a destra</td>
+            <td align="justify" width="45%">In tipografia, la parola giustificazione indica l'impaginazione di una colonna di testo in modo che tutte le righe siano allineate verticalmente fra loro sia lungo il margine sinistro, sia lungo quello destro</td>
+        </tr>
+        <tr>
+            <td><code>align="left"</code></td>
+            <td><code>align="center"</code></td>
+            <td><code>align="right"</code></td>
+            <td><code>align="justify"</code></td>
+        </tr>
+
+    </table>
+</td>
+</tr>
+
+<!--cellspacing-->
+  <tr>
+        <td rowspan="2" class="def" id="cellspacing">
+            <tt>cellspacing</tt>
+        </td>
+        <td colspan="2"> 
+            <table style="float:left;"><tr><td >Attributo per stabilire</td></tr></table> 
+                        <table cellspacing="0"><tr><td>lo spazio tra i blocchi di una tabella</td></tr></table>
+
+        </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp>
+            <table cellspacing="0"><tr><td>lo spazio tra i blocchi di una tabella</td></tr></table>
+      </xmp>
+</td>
+</tr>
+
+<!--width-->
+  <tr>
+        <td rowspan="2" class="def" id="width">
+            <tt>width</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0" width="250px"><tr><td>Attributo per stabilire la lunghezza (orrizzontale) del blocco</td></tr></table>
+        </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0" width="250px"><tr><td>Attributo per stabilire la lunghezza (orrizzontale) del blocco</td></tr></table></xmp>
+</td>
+</tr>
+
+
+<!--height-->
+  <tr>
+        <td rowspan="2" class="def" id="height">
+            <tt>height</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0" height="100px"><tr><td>
+                Attributo per stabilire<br>l'altezza del blocco</td></tr></table>
+        </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0" height="100px"><tr><td>
+Attributo per stabilire<br>l'altezza del blocco</td></tr></table></xmp>
+</td>
+</tr>
+
+<!--rowspan-->
+  <tr>
+        <td rowspan="2" class="def" id="rowspan">
+            <tt>rowspan</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0">
+                <tr><td rowspan="3">Attributo</td><td>per creare</td></tr>
+                <tr><td>una cella</td></tr>
+                <tr><td>di una tabella</td></tr>
+                <tr><td>che si espanda</td><td>per 2 o più righe (row).</td></tr>                
+            </table> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp><table cellspacing="0">
+                <tr><td rowspan="3">Attributo</td><td>per creare</td></tr>
+                <tr><td>una cella</td></tr> 
+                <tr><td>di una tabella</td></tr>
+                <tr><td>che si espanda</td><td>per 2 o più righe (row).</td></tr></table></xmp>
+</td>
+</tr>
+
+
+
+<!--colspan-->
+  <tr>
+        <td rowspan="2" class="def" id="colspan">
+            <tt>colspan</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0">
+                <tr><td colspan="3" align="center"> Attributo </td></tr>
+                <tr><td>per creare</td><td>una cella</td><td>di una tabella</td></tr>
+                <tr><td colspan="2">che si espanda</td><td>per 2 o più colonne.</td></tr>                
+            </table> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp> <table cellspacing="0">
+                <tr><td colspan="3" align="center"> Attributo </td></tr>
+                <tr><td>per creare</td><td>una cella</td><td>di una tabella</td></tr>
+                <tr><td colspan="2">che si espanda</td><td>per 2 o più colonne.</td></tr></table> </xmp>
+</td>
+</tr>
+
+
+<!--border-->
+  <tr>
+        <td rowspan="2" class="def" id="border">
+            <tt>border</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0" border="5">
+                <tr><td> Permette di modificare lo spessore del bordo di un oggetto. </td></tr>                
+            </table> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+    <xmp>   <table cellspacing="0" border="5">
+                <tr><td> Permette di modificare lo spessore del bordo di un oggetto. </td></tr></table> </xmp>
+</td>
+</tr>
+
+
+<!--bgcolor-->
+  <tr id="bgcol">
+        <td rowspan="2" class="def">
+            <tt>bgcolor</tt>
+        </td>
+        <td colspan="2"> 
+            <table cellspacing="0">
+                <tr><td class="bgc" bgcolor="#FFFFFF"> Attributo </td><td class="bgc" bgcolor="aaffff">per colorare</td> </tr><tr>
+                    <td class="bgc" bgcolor="00ffff">lo sfondo di </td><td class="bgc" bgcolor="aaaaff">una cella di</td></tr><tr>
+                    <td class="bgc" bgcolor="00aaff"> una tabella di un </td><td class="bgc" bgcolor="ff00ff">determinato colore.</td></tr>                
+            </table> </td>
+    </tr>
+    <tr><td>
+        Esempio:
+    </td>
+<td>
+      <xmp> <td bgcolor="#FFFFFF"> Attributo </td><td bgcolor="aaffff">per colorare</td> </tr><tr>
+                    <td bgcolor="00ffff">lo sfondo di </td><td bgcolor="aaaaff">una cella di</td></tr><tr>
+                    <td bgcolor="00aaff"> una tabella di un </td><td bgcolor="ff00ff">determinato colore.</td></tr>  </xmp>
+</td>
+</tr>
+
+
+
+</table>
+
+<hr>
+
+<div class="index">
+<dl>  <dt>Vai alla sezione:</dt>
+<dt><a href="#hb"> Head/Body</a> </dt>
+<dt><a href="#ttop"> Tag Topografici</a> </dt>
+<dt><a href="#lst"> Liste</a>   </dt>
+<dt><a href="#tab"> Tabelle</a></dt>
+<dt><a href="#tv"> Tag Vari</a></dt>
+<dt><a href="#ov"> Attributi Vari</a></dt>
+</dl>
+</div>
+</body>
+
+</html>
